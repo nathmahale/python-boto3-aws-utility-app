@@ -2,7 +2,7 @@ from _cffi_backend import callback
 from boto3automationlibrary import *
 import sys
 sys.path.append(
-    r"C:\Users\SainathMahale\boto3-aws-automation-library-20190725\gui-workshop")
+    r"<<location>>")
 
 
 def getDGTarget():
@@ -328,7 +328,7 @@ def ASGProcessMgmt():
     asgProcessMgmtWindow.geometry('')
     asgProcessMgmtWindow.title("ASG process management")
     Label(asgProcessMgmtWindow,
-          text="Please enter only ASG suffix as mentioned below\n eg: 'XOB0S0XNA9RT'\n reports-ops-asg-asg-XZHOZIBFBGS1-AutoScalingGroup-XOB0S0XNA9RT", font=subMenuFontStyle2, justify=LEFT).pack(anchor=NW)
+          text="Please enter only ASG suffix as mentioned below\n eg: 'XOB0S0XNA9RT'\n application-env-asg-XZHOZIBFBGS1-AutoScalingGroup-XOB0S0XNA9RT", font=subMenuFontStyle2, justify=LEFT).pack(anchor=NW)
     asgSuffixTextEntry = Entry(
         asgProcessMgmtWindow, font=subMenuFontStyle1, justify=LEFT)
     asgSuffixTextEntry.pack(anchor=NW)
@@ -381,7 +381,7 @@ def detachInstanceFromASG():
     asgInstanceDetachWindow.geometry('')
     asgInstanceDetachWindow.title("Detach Instance from ASG")
     Label(asgInstanceDetachWindow,
-          text="Please enter only ASG suffix as mentioned below\n eg: 'XOB0S0XNA9RT' \n reports-ops-asg-asg-XZHOZIBFBGS1-AutoScalingGroup-XOB0S0XNA9RT", font=subMenuFontStyle2, justify=LEFT).pack(anchor=NW)
+          text="Please enter only ASG suffix as mentioned below\n eg: 'XOB0S0XNA9RT' \n application-env-asg-XZHOZIBFBGS1-AutoScalingGroup-XOB0S0XNA9RT", font=subMenuFontStyle2, justify=LEFT).pack(anchor=NW)
     asgSuffixTextEntry = Entry(
         asgInstanceDetachWindow, font=subMenuFontStyle1, justify=LEFT)
     asgSuffixTextEntry.pack(anchor=NW)
@@ -402,7 +402,7 @@ def modifyASGCapacity():
    modifyASGCapacityWindow.geometry('')
    modifyASGCapacityWindow.title("Modify ASG capacity")
    Label(modifyASGCapacityWindow,
-          text="Please enter only ASG suffix as mentioned below\n eg: 'XOB0S0XNA9RT'\n reports-ops-asg-asg-XZHOZIBFBGS1-AutoScalingGroup-XOB0S0XNA9RT", font=subMenuFontStyle2, justify=LEFT).pack(anchor=NW)
+          text="Please enter only ASG suffix as mentioned below\n eg: 'XOB0S0XNA9RT'\n application-env-asg-XZHOZIBFBGS1-AutoScalingGroup-XOB0S0XNA9RT", font=subMenuFontStyle2, justify=LEFT).pack(anchor=NW)
    asgSuffixTextEntry = Entry(
         modifyASGCapacityWindow, font=subMenuFontStyle2, justify=LEFT, width=15)
    asgSuffixTextEntry.pack(anchor=NW)
@@ -474,7 +474,7 @@ def updateDGTarget():
         y += 30
 
     Label(updateDGTWindow,
-          text="Please enter only ASG suffix\n eg: XOB0S0XNA9RT \n reports-ops-asg-asg-XZHOZIBFBGS1-AutoScalingGroup-XOB0S0XNA9RT", font=subMenuFontStyle2, justify=LEFT).place(x=0, y=450)
+          text="Please enter only ASG suffix\n eg: XOB0S0XNA9RT \n application-env-asg-XZHOZIBFBGS1-AutoScalingGroup-XOB0S0XNA9RT", font=subMenuFontStyle2, justify=LEFT).place(x=0, y=450)
     asgSuffixTextEntry = Entry(
         updateDGTWindow, font=subMenuFontStyle1, justify=LEFT, width=20)
     asgSuffixTextEntry.place(x=0, y=520)
