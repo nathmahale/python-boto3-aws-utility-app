@@ -75,3 +75,7 @@ DesiredCapacity value, before executing this.
 
 ![s3 menu](./images/s3-menu-item1.jpg)
 
+> **Wish List**
+
+- Add test cases using Python moto library
+- Add more AWS services like SSM, CloudWatch Logs, etc
