@@ -1,6 +1,8 @@
 from _cffi_backend import callback
 from boto3automationlibrary import *
 import sys
+
+## Enter the absolute path location of atomationLibrary.py to make it accessible during the tool's runtime
 sys.path.append(
     r"<<location>>")
 
@@ -648,4 +650,6 @@ menubutton4.pack(fill=BOTH, expand=True)
 
 exitButton.pack(fill=BOTH, expand=True)
 
+
+## Tool's main entry point
 rootObject.mainloop()
