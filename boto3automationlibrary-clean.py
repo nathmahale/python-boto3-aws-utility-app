@@ -12,26 +12,25 @@
 
 
 import boto3 as bt
-import sys
+import sys, rsa, base64, matplotlib, json
 import argparse as ar
 import subprocess as sb
-import rsa
-import base64
 from tkinter import *
 from tkinter import ttk
 from tkinter.font import *
 import tkinter.font as font
 import random as rn
 import tkinter as tk
-import matplotlib
 from pprint import pprint as pp
 from os import path as pt
 from botocore import exceptions as ex
 from tkinter import messagebox
-import json
 import pprint as ppr
 
+## Set default profile to name SAML, you can change ton any other profile saml, based on your AWS profile setup
 bt.setup_default_session(profile_name='saml')
+
+## Initilize the client for different AWS services
 ec2client = bt.client('ec2')
 asgclient = bt.client('autoscaling')
 cfclient = bt.client('cloudformation')
@@ -40,11 +39,16 @@ cdclient = bt.client('codedeploy')
 s3Resource = bt.resource('s3')
 s3client = bt.client('s3')
 
-# for codedeployfile upload
+## for codedeployfile upload
 downloadsDir = r'<<DownloadDir>>'
 zip_file_name_suffix = '.zip'
+
+## S3 prefix is harcoded here
+## TODO: make it dynamic
 s3_object_prefix_key = "abc/"
 
+## Color scheme, can be changed to your liking
+## Refer https://htmlcolorcodes.com/
 submitButtonBGColor = '#302908'
 exitButtonBGColor = '#000000'
 exitButtonFGColor = '#F1C9C9'
