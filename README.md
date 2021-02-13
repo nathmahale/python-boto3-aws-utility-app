@@ -24,24 +24,8 @@ aws-azure-login.cmd login --profile saml
 ```
 > AWS EC2 Keypair location, please update the below location with keypair location in *boto3automationlibrary.py*
 ``` python
-privKeyfile_generic_int = r'C:\Users\<<location>>\luv-dev-keypair.pem'
+private_key_pair = r'<<location>>/keypair.pem'
 
-privKeyfile_landata_uat = r'C:\Users\<<location>>\landata-uat-201807.pem'
-privKeyfile_landata_prd = r'C:\Users\<<location>>\landata-prd-keypair-201808.pem'
-
-privKeyfile_lassi_uat = r'C:\Users\<<location>>\lassi-uat-keypair-201805.pem'
-privKeyfile_lassi_prd = r'C:\Users\<<location>>\lassi-prd-keypair-201807'
-
-privKeyfile_vots_uat = r'C:\Users\<<location>>\vots-uat-28082018.pem'
-privKeyfile_vots_prd = r'C:\Users\<<location>>\vots-prd-keypair-20180831.pem'
-
-privKeyfile_pcs_prd = r'C:\Users\<<location>>\pcs-prd-keypair-201809.pem'
-
-privKeyfile_reports_uat = r'C:\Users\<<location>>\reports-uat-keypair-20180925.pem'
-privKeyfile_reports_prd = r'C:\Users\<<location>>\reports-prd-keypair-20181014.pem'
-
-privKeyfile_rmq_prd = r'C:\Users\<<location>>\rabbitmq-prd-keypair-201806.pem'
-privKeyfile_rmq_uat = r'C:\Users\<<location>>\rabbitmq-uat-keypair-201804.pem'
 
 ```
 ![Home menu](./images/home-menu.jpg)
