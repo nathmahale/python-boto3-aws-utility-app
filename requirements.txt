@@ -40,7 +40,7 @@ python-json2yaml==0.1.1
 pytz==2019.1
 PyYAML==5.4
 requests==2.22.0
-rsa==4.0
+rsa==4.7
 s3transfer==0.2.0
 sh==1.12.14
 six==1.12.0
