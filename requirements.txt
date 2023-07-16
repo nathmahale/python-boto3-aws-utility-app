@@ -1,4 +1,4 @@
-﻿astroid==2.2.5
+astroid==2.2.5
 attrs==19.2.0
 autopep8==1.5.4
 awslogs==0.11.0
@@ -33,7 +33,7 @@ pycodestyle==2.6.0
 pycparser==2.20
 pylint==2.3.1
 pyparsing==2.4.7
-PyPDF2==1.27.5
+PyPDF2==1.27.9
 PySimpleGUI==4.26.0
 python-dateutil==2.8.0
 python-json2yaml==0.1.1
