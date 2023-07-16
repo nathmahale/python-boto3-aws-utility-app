@@ -39,7 +39,7 @@ python-dateutil==2.8.0
 python-json2yaml==0.1.1
 pytz==2019.1
 PyYAML==5.4
-requests==2.22.0
+requests==2.31.0
 rsa==4.7
 s3transfer==0.2.0
 sh==1.12.14
