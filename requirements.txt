@@ -10,7 +10,7 @@ cffi==1.14.2
 cfn-flip==1.2.1
 cfn-get-export-value==0.0.4
 chalice==1.11.1
-chardet==3.0.4
+chardet==5.2.0
 Click==7.0
 colorama==0.4.1
 cycler==0.10.0
