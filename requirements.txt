@@ -2,7 +2,7 @@ astroid==2.2.5
 attrs==19.2.0
 autopep8==1.5.4
 awslogs==0.11.0
-Babel==2.9.1
+Babel==2.14.0
 boto3==1.9.145
 botocore==1.12.145
 certifi==2023.7.22
