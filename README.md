@@ -1,6 +1,4 @@
------------------------------------------
-------python-boto3-aws-utility-app-------
------------------------------------------
+# python-boto3-aws-utility-app
 
 This is a simple Python GUI application built using Python out-of-box Tkinter and AWS boto3 library.
 The group of tasks are divided in 4 broad categories
@@ -12,22 +10,24 @@ The group of tasks are divided in 4 broad categories
 - S3
 
 
-> Please install Python 3.7.3 and other dependant libraries from ./requirements.txt using the following command 
+> Please install Python 3.7.3 and other dependant libraries from `./requirements.txt` using the following command 
 
 ``` python
 pip install -r requirements.txt
 ```
+
 > Please get SAML token , before running the application
 
 ``` powershell
 aws-azure-login.cmd login --profile saml
 ```
-> AWS EC2 Keypair location, please update the below location with keypair location in *boto3automationlibrary.py*
+
+> AWS EC2 Keypair location, please update the below location with keypair location in `boto3automationlibrary.py`
+
 ``` python
 private_key_pair = r'<<location>>/keypair.pem'
-
-
 ```
+
 ![Home menu](./images/home-menu.jpg)
 
 
@@ -55,12 +55,14 @@ DesiredCapacity value, before executing this.
 ![ec2 menu](./images/asg-menu-item1.jpg)
 
 >**CloudFormation management**
+
 - List cfn stack outputs [ *WIP* ]
 - Delete cfn stack
   
 ![cfn menu](./images/cfn-menu-item1.jpg)
 
 > **CodeDeploy management**
+
 - Trigger deployment --> Select app, env and component eg *vots-ops-app*
 - List deployment targets --> List deployment targets of codeDeploy application
 - Update deployment target --> Updates deployment target [ updating multiple targets to be added ]
@@ -68,6 +70,7 @@ DesiredCapacity value, before executing this.
 ![codeDeploy menu](./images/codeDeploy-menu-item1.jpg)
 
 > **S3 management**
+
 - Upload file to S3 location
 - Copy file in same S3 bucket
 - Copy filein different S3 buckets in same AWS account
