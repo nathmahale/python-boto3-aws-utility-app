@@ -29,7 +29,7 @@ Pillow==10.3.0
 pprint==0.1
 pyasn1==0.4.5
 pycodestyle==2.6.0
-pycparser==2.20
+pycparser==2.22
 pylint==2.3.1
 pyparsing==2.4.7
 PySimpleGUI==4.26.0
